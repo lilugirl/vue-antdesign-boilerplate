@@ -3,14 +3,14 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import "ant-design-vue/dist/antd.css";
-import { Button } from "ant-design-vue";
+import {
+  Button
+} from "ant-design-vue";
 
 Vue.config.productionTip = false;
-
+Vue.use(Button);
 new Vue({
   router,
   store,
   render: h => h(App)
 }).$mount("#app");
-
-Vue.use(Button);
